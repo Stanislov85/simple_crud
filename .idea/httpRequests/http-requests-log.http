@@ -1,0 +1,82 @@
+GET http://localhost:8000/api/v1/Measurement/
+Accept: application/json
+
+<> 2021-12-12T101954.200.json
+
+###
+
+POST http://localhost:8000/api/v1/Measurement/
+Content-Type: application/json
+
+{
+  "value":1122.2233,
+  "project": 1
+}
+
+<> 2021-12-12T101945.201.json
+
+###
+
+POST http://localhost:8000/api/v1/Measurement/
+Content-Type: application/json
+
+{
+  "value":1111.2222,
+  "project": 2
+}
+
+<> 2021-12-12T101928.201.json
+
+###
+
+GET http://localhost:8000/api/v1/Project/1/
+Accept: application/json
+
+<> 2021-12-12T101842.200.json
+
+###
+
+GET http://localhost:8000/api/v1/Project/
+Accept: application/json
+
+<> 2021-12-12T101817.200.json
+
+###
+
+DELETE http://localhost:8000/api/v1/Project/3/
+Content-Type: application/json
+
+###
+
+GET http://localhost:8000/api/v1/Project/
+Accept: application/json
+
+<> 2021-12-12T101754.200.json
+
+###
+
+POST http://localhost:8000/api/v1/Measurement/
+Content-Type: application/json
+
+{
+  "value": 1172.123,
+  "project": 2
+
+}
+
+<> 2021-12-12T101618.201.json
+
+###
+
+GET http://localhost:8000/api/v1/Project/
+Accept: application/json
+
+<> 2021-12-12T101211.200.json
+
+###
+
+GET http://localhost:8000/api/v1/Project/
+Accept: application/json
+
+###
+
